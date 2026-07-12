@@ -1,3 +1,11 @@
+adaptation-samsung-gts7xlwifi (0.0.11) trixie; urgency=medium
+
+  * configs: add Replaces/Breaks on bluez so /etc/bluetooth/main.conf can be
+    shipped. bluez 5.82+ now provides that file, causing a dpkg --unpack
+    overwrite conflict that broke the Droidian rootfs build.
+
+ -- tarpediem <omagnier@gmail.com>  Sun, 12 Jul 2026 08:40:00 +0000
+
 adaptation-samsung-gts7xlwifi (0.0.10) trixie; urgency=medium
 
   * Bluetooth: pin adapter Class of Device to Computer/Laptop (0x00010c) via

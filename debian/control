@@ -21,6 +21,8 @@ Description: adaptation-samsung-gts7xlwifi - meta
 Package: adaptation-samsung-gts7xlwifi-configs
 Architecture: all
 Depends: ${misc:Depends},
+Replaces: bluez
+Breaks: bluez (<< 5.0)
 Description: Samsung Galaxy Tab S7+ Wi-Fi (gts7xlwifi)'s specific adaptation configs
  Device-specific configuration files (udev rules, phosh compositor settings,
  device flag files, hwcomposer/audio glue) for the Samsung Galaxy Tab S7+
